@@ -1,3 +1,136 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    font-size: 30px;
+    font-weight: 700;
+    color: #2D2746;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+header {
+    width: 100vw;
+    background-color: #5E1858;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+
+    h1 {
+        margin-right: 41%;
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 21px;
+        font-weight: 400;
+    }
+
+    nav {
+        display: flex;
+        min-width: 30%;
+        justify-content: space-evenly;
+    }
+}
+
+section {
+    width: 1000px;
+    margin-top: 3%;
+}
+
+#opoli {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        width: 40%;
+
+        p {
+            padding: 4% 0;
+        }
+    }
+
+    img {
+        width: 60%;
+
+    }
+}
+
+#charakteristiky {
+    .karta {
+        width: 28%;
+        aspect-ratio: 1;
+        background-color: #EBEAFA;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        p {
+            margin-top: 4%;
+        }
+    }
+
+    .kontejner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        padding-bottom: 2%;
+    }
+}
+
+#fotogalerie {
+    h1 {
+        padding-bottom: 2%;
+    }
+
+    .kontejner {
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            img:nth-child(3) {
+                margin-top: 2%;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh;
 }
