@@ -43,6 +43,10 @@ header {
         color: #fff;
         font-size: 21px;
         font-weight: 400;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     nav {
@@ -74,7 +78,7 @@ section {
 
     img {
         width: 60%;
-
+        height: fit-content;
     }
 }
 
@@ -133,4 +137,88 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 13vh;
+}
+
+@media only screen and (max-width: 1080px) {
+    section {
+        width: 939px;
+    }
+
+    #opoli {
+        div {
+            p {
+                padding: 1% 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    section {
+        width: 90%;
+    }
+
+    #opoli {
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+
+        div {
+            width: 100%;
+            margin: 3% 0%;
+        }
+    }
+
+    #charakteristiky {
+        .karta {
+            width: 94%;
+            aspect-ratio: 1;
+            margin-bottom: 2%;
+            padding: 6%;
+        }
+
+        .kontejner {
+            flex-wrap: wrap;
+        }
+    }
+
+    #fotogalerie {
+ 
+        .kontejner {
+            display: flex;
+            flex-direction: column;
+            img {
+                width: 100%;
+                margin-top: 5%;
+            }
+        }
+    }
+
+    header {
+        flex-direction: column;
+        height: 22vh;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 21px;
+            font-weight: 400;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        h1 {
+            margin-right: 57%;
+          }
+    
+        nav {
+            flex-direction: column;
+            margin-right: 47%;
+        }
+    }
+
 }
